@@ -1,34 +1,35 @@
-###################################################################
-###################################################################
-####                                                           ####
-####                      SINOGRAM INPAINTING                  ####
-####                                                           ####
-###################################################################
-###################################################################
+SINOGRAM INPAINTING
+===================
 
 
 
 ##  Brief description
 This repository contains different algorithms to double the number of views
-of a sinogram, such that its reconstruction with filtered backprojection 
-siffers from less severe artifacts.
+of a view-undersampled sinogram, such that its reconstruction with filtered backprojection 
+suffers from less severe artifacts.
 
 
 
 ##  Installation
 Basic compilers like gcc and g++ are required.
-The simplest way to install all the code is to use Anaconda with python-2.7 and to 
-add the installation of the python package scipy, scikit-image, Cython and opencv.
+The simplest way to use the code is with an Anaconda environment equipped with
+python-2.7, scipy, scikit-image, Cython and opencv.
 
-On a terminal, just type:
-	1) conda create -n sino-inp python=2.7 anaconda
-	2) conda install -n sino-inp scipy Cython scikit-image opencv
-	3) source activate sino-inp
-	4) download the repo and type: python setup.py
+Procedure:
+	
+1. Create the Anaconda environment (if not already existing): `conda create -n sino-inp python=2.7 anaconda`.
+2. Install necessary Python packages: `conda install -n sino-inp scipy Cython scikit-image opencv`.
+3. Activate environment: `source activate sino-inp`.
+4. Download the repository: `git clone git@github.com:arcaduf/sinogram_inpainting.git`.
+5. Install the subroutines in C: `python setup.py`.
 
-If setup.py runs without giving any error all subroutines in C have been installed and
+If `setup.py` runs without giving any error all subroutines in C have been installed and
 your python version meets all dependencies.
 
+If you run `python setup.py 1` (you can use any other character than 1), the 
+all executables, temporary and build folders are deleted, the test data are 
+placed in .zip files. In this way, the repository is restored to its original
+status, right after the download.
 
 
 ##  Test the package
