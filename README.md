@@ -34,6 +34,6 @@ status, right after the download.
 
 ##  Test the package
 Go inside the folder "scripts/" and run the tests.
-Every time this script creates an image, the script is halted. To run the successive tests
-just close the image.
 
+When a plot is produced during the execution of a test, the script is halted until
+the plot window is manually closed.
