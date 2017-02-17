@@ -11,7 +11,7 @@ suffers from less severe artifacts.
 
 
 ##  Installation
-Basic compilers like gcc and g++ are required.
+Basic compilers like gcc and g++ and the FFTW library are required.
 The simplest way to use the code is with an Anaconda environment equipped with
 python-2.7, scipy, scikit-image, Cython and opencv.
 
